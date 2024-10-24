@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix | TAREA 3</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo-container">
+                <div class="nav__logo-wrapper">
+                    <img class="nav__logo" src="../MEDIA/Fsport-removebg-preview.png" alt="Logo Limonada">
+                </div>
+                <div class="nav__company-name">
+                    FELO<span class="nav__company-name--highlight" >SPORT</span>
+                </div>
+            </div>
+            <div class="nav__links">
+                <a href="#" class="nav__link">Inicio</a>
+                <a href="#services" class="nav__link">Servicios</a>
+                <a href="#products" class="nav__link">Productos</a>
+                <a href="#contact" class="nav__link">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <img src="../MEDIA/imagen inicio 1.jpg" alt="Deportes" class="slide__image">
+                <div class="slide__overlay"></div>
+                <div class="slide__content">
+                    <h2 class="slide__title">Bienvenido a FELOSPORT</h2>
+                    <p class="slide__description">Tu destino para equipamiento deportivo de alta calidad</p>
+                    <button class="slide__button">Explorar Productos</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../MEDIA/imagen 2 inicio.avif" alt="Equipamiento" class="slide__image">
+                <div class="slide__overlay"></div>
+                <div class="slide__content">
+                    <h2 class="slide__title">Equipamiento Premium</h2>
+                    <p class="slide__description">Las mejores marcas para tu rendimiento deportivo</p>
+                    <button class="slide__button">Ver Catálogo</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="../MEDIA/imagen inicio 3.jpg" alt="Ofertas" class="slide__image">
+                <div class="slide__overlay"></div>
+                <div class="slide__content">
+                    <h2 class="slide__title">Ofertas Especiales</h2>
+                    <p class="slide__description">Descubre nuestras promociones exclusivas</p>
+                    <button class="slide__button">Ver Ofertas</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="slider-button slider-button--prev">❮</button>
+        <button class="slider-button slider-button--next">❯</button>
+        
+        <div class="slider-nav">
+            <div class="slider-nav__dot active"></div>
+            <div class="slider-nav__dot"></div>
+            <div class="slider-nav__dot"></div>
+        </div>
+    </section>
+
+    <main class="main">
+        <!-- Nueva sección de servicios -->
+        <section id="services" class="services">
+            <h2 class="services__title">Nuestros Servicios</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🏃</div>
+                    <h3 class="service-card__title">Asesoría Deportiva</h3>
+                    <p class="service-card__description">Contamos con expertos que te ayudarán a elegir la ropa deportiva ideal según tu actividad física y necesidades específicas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">👕</div>
+                    <h3 class="service-card__title">Personalización</h3>
+                    <p class="service-card__description">Servicio de personalización de prendas deportivas con nombres, números y diseños exclusivos para equipos y clubes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🚚</div>
+                    <h3 class="service-card__title">Envío Express</h3>
+                    <p class="service-card__description">Entrega rápida y segura de tus productos deportivos a cualquier parte del país en menos de 48 horas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de productos mejorada -->
+        <aside id="products" class="offers">
+            <marquee behavior="alternate">
+                <h1 class="offers__title">
+                    <font color="yellow">¡OFERTAS <font color="sky blue">FELOSPORT!</font></font>
+                </h1>
+            </marquee>
+            <div class="offers__grid">
+                <div class="product">
+                    <div class="product__image-container">
+                        <img class="product__image" src="../MEDIA/gorra.jpeg" alt="Gorra">
+                    </div>
+                    <p class="product__name">Gorra Deportiva</p>
+                    <p class="product__price">S/50</p>
+                    <button class="product__button">Agregar al carrito</button>
+                </div>
+                <div class="product">
+                    <div class="product__image-container">
+                        <img class="product__image" src="../MEDIA/polo.jpeg" alt="Polo">
+                    </div>
+                    <p class="product__name">Polo Deportivo</p>
+                    <p class="product__price">S/75</p>
+                    <button class="product__button">Agregar al carrito</button>
+                </div>
+                <div class="product">
+                    <div class="product__image-container">
+                        <img class="product__image" src="../MEDIA/polera.jpeg" alt="Polera">
+                    </div>
+                    <p class="product__name">Polera</p>
+                    <p class="product__price">S/69</p>
+                    <button class="product__button">Agregar al carrito</button>
+                </div>
+                <div class="product">
+                    <div class="product__image-container">
+                        <img class="product__image" src="../MEDIA/zapatilla.jpeg" alt="Zapatillas correr">
+                    </div>
+                    <p class="product__name">Zapatillas Adidas</p>
+                    <p class="product__price">S/199</p>
+                    <button class="product__button">Agregar al carrito</button>
+                </div>
+            </div>
+        </aside>
+
+        <section id="contact" class="auth-section">
+            <h2 class="auth-title">Área de Usuario</h2>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" onclick="showForm('login')">Iniciar Sesión</button>
+                <button class="auth-tab" onclick="showForm('register')">Registrarse</button>
+            </div>
+
+            <form id="login-form" class="auth-form active">
+                <div class="form-group">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-input" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-input" placeholder="Ingresa tu contraseña" required>
+                </div>
+                <button type="submit" class="form-button">Iniciar Sesión</button>
+            </form>
+
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-input" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-input" placeholder="ejemplo@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Teléfono</label>
+                    <input type="tel" class="form-input" placeholder="Ingresa tu número de teléfono" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Dirección</label>
+                    <input type="text" class="form-input" placeholder="Ingresa tu dirección completa" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" class="form-input" placeholder="Crea una contraseña segura" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Confirmar Contraseña</label>
+                    <input type="password" class="form-input" placeholder="Confirma tu contraseña" required>
+                </div>
+                <button type="submit" class="form-button">Registrarse</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4 class="footer-column__title">Navegación</h4>
+                <ul class="footer-column__list">
+                    <li class="footer-column__item">
+                        <a href="#" class="footer-column__link">Inicio</a>
+                    </li>
+                    <li class="footer-column__item">
+                        <a href="#services" class="footer-column__link">Servicios</a>
+                    </li>
+                    <li class="footer-column__item">
+                        <a href="#products" class="footer-column__link">Productos</a>
+                    </li>
+                    <li class="footer-column__item">
+                        <a href="#contact" class="footer-column__link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Columna de Contacto -->
+            <div class="footer-column">
+                <h4 class="footer-column__title">Contacto</h4>
+                <ul class="footer-column__list">
+                    <li class="footer-column__item">
+                        <a href="tel:+51123456789" class="footer-column__link">
+                            📞 +51 901 038 412
+                        </a>
+                    </li>
+                    <li class="footer-column__item">
+                        <a href="mailto:info@felosport.com" class="footer-column__link">
+                            ✉️ felixpolobentura@gmail.com
+                        </a>
+                    </li>
+                    <li class="footer-column__item">
+                        <span class="footer-column__link">
+                            📍 Trujillo, Perú
+                        </span>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Columna de Redes Sociales -->
+            <div class="footer-column">
+                <h4 class="footer-column__title">Síguenos</h4>
+                <p>Mantente conectado con nosotros en redes sociales</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank" class="social-icons__link">
+                        <img class="social-icons__image" src="../MEDIA/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icons__link">
+                        <img class="social-icons__image" src="../MEDIA/Facebook.jpeg" alt="Facebook">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" class="social-icons__link">
+                        <img class="social-icons__image" src="../MEDIA/titok.webp" alt="Tiktok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2024 Felix Polo Bentura. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../JS/index.js"></script>
+</body>
+</html>
